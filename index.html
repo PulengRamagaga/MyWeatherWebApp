@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="weather-app">
+        <div class="search-container">
+            <input type="text" id="city-input" placeholder="Enter a city..">
+            <button id="search-btn"><i class="fas fa-search"></i> Search</button>
+        </div>
+        <div class="weather-info">
+            <h1 id="city-name">San Francisco</h1>
+            <p id="date">Friday 06:24, broken clouds</p>
+            <p id="humidity">Humidity: 81%, Wind: 2.68 km/h</p>
+            <div class="temperature">
+                <img id="weather-icon" src="https://openweathermap.org/img/wn/01d@2x.png" alt="Weather icon">
+                <span id="temp-value">12</span><span>°C</span>
+            </div>
+        </div>
+        <div class="forecast-grid" id="forecast">
+            <div class="forecast-item">
+                <p>Fri</p>
+                <p>☁️</p>
+                <p>17° 12°</p>
+            </div>
+            <div class="forecast-item">
+                <p>Sat</p>
+                <p>☁️</p>
+                <p>14° 10°</p>
+            </div>
+            <div class="forecast-item">
+                <p>Sun</p>
+                <p>☁️</p>
+                <p>12° 10°</p>
+            </div>
+            <div class="forecast-item">
+                <p>Mon</p>
+                <p>☁️</p>
+                <p>12° 9°</p>
+            </div>
+            <div class="forecast-item">
+                <p>Tue</p>
+                <p>⛅</p>
+                <p>14° 10°</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>This project was coded by You and is <a href="#">open-sourced on GitHub</a> and <a href="#">hosted on
+                Netlify</a>.</p>
+    </footer>
+
+    <script src="src/script.js"></script>
+</body>
+
+</html>
